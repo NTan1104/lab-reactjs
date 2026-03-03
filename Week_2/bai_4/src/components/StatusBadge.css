@@ -1,0 +1,25 @@
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-online {
+    background-color: #4caf50;
+}
+
+.btn-offline {
+    background-color: #888;
+}
+
+.btn-busy {
+    background-color: #f44336;
+}
+
+.btn-change {
+    background-color: #2196f3; 
+    margin-top: 10px;
+}

@@ -1,13 +1,18 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import Button from './components/Button'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className='btn-group'>
-      <Button type="primary">Primary</Button>
-      <Button type="danger">Danger</Button>
-      <Button type="success">Success</Button>
-    </div>
+    <>
+      <h2 style={{color: count===10 ? 'red' : 'black'}}>{count}</h2 >
+      <button className='btnadd' onClick={()=> setCount(count+1)}>+</button>
+      <button className='btnminus' onClick={()=> count>0 && setCount(count-1)}>-</button>
+      <button className='btnrest' onClick={()=> setCount(0)}>Reset</button>
+    </>
   )
 }
 

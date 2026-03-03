@@ -1,0 +1,28 @@
+.alert-group {
+    display: flex;
+    gap: 12px;
+}
+
+.alert-group button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.type-success {
+    background-color: green;
+    color: white ;
+}
+
+.type-warning {
+    background-color: yellow ;
+    color: #333 ;
+}
+
+.type-error {
+    background-color: red ;
+    color: white ;
+}
